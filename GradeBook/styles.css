@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #030303;
+  color: #dad5d5;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Main styles */
+main {
+  padding: 20px;
+}
+
+/* Table styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  border: 1px solid #dad5d5;
+  padding: 8px;
+  text-align: center;
+}
+
+th {
+  background-color: #dad5d5;
+  color: #333;
+}
+
+/* Show statistics button styles */
+#showStatisticsBtn {
+  display: block;
+  margin: 0 auto; /* Center horizontally */
+  background-color: #18181a;
+  color: #dad5d5;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
+/* Statistics block styles */
+#statisticsBlock {
+  background-color: #18181a;
+  color: #dad5d5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+#statisticsBlock h2 {
+  margin-top: 0;
+}
+
+#statisticsBlock p {
+  margin: 10px 0;
+}
+
+/* Hide elements */
+.hidden {
+  display: none;
+}
+
+/* Details modal styles */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: black; /* Change background color */
+  color: white; /* Change text color */
+  padding: 30px; /* Increase padding for more space */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  width: 400px; /* Increase width */
+}
+
+#detailsModal h2 {
+  margin-top: 0;
+}
+
+#detailsModal p {
+  margin: 10px 0;
+}
+
+#detailsModal button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Toggle statistics button styles */
+#toggleStatisticsBtn {
+  background-color: #007bff; /* Blue color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  border-radius: 5px; /* Add border radius for rounded corners */
+}
+
+#toggleStatisticsBtn:hover {
+  background-color: #0056b3; /* Darker blue color on hover */
+}

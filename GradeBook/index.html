@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gradebook Project</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gradebook</h1>
+    <div id="teacherInfo">
+      <p>2100030702 - K.VAISHNAVI</p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="options">
+      <select id="filterOption">
+        <option value="all">All</option>
+        <option value="name">Filter by Name</option>
+        <option value="ticket">Filter by Ticket No</option>
+        <option value="passed">Passed</option>
+        <option value="failed">Failed</option>
+      </select>
+      <input type="text" id="filterInput" placeholder="Enter filter text">
+      <button id="showStatisticsBtn">Show Statistics</button>
+    </div>
+    <table id="gradebook">
+      <thead>
+        <tr>
+          <th>№</th>
+          <th>Name</th>
+          <th>Ticket's Number</th>
+          <th>Rating Grade</th>
+          <th>Exam Grade</th>
+          <th>Final Grade</th>
+          <th>Status</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+       
+      </tbody>
+    </table>
+  </main>
+  
+  <div id="detailsModal" class="modal hidden">
+   
+  </div>
+
+  <div id="statisticsBlock" class="hidden">
+    <div id="statistics" class="statistics">
+      <h2>Statistics</h2>
+      <p>Total Students: <span id="totalStudents"></span></p>
+      <p>Passed Students: <span id="passedStudents"></span></p>
+      <p>Failed Students: <span id="failedStudents"></span></p>
+      <p>Average Grade: <span id="averageGrade"></span></p>
+      <p>Max Grade: <span id="maxGrade"></span></p>
+      <p>Min Grade: <span id="minGrade"></span></p>
+    </div>
+  </div>
+
+  <footer>
+    <p>Teacher's Signature: 2100030702</p>
+    <p>Date: <span id="currentDate"></span></p>
+  </footer>
+
+<script src="script.js"></script>
+<script>
+  
+  const currentDate = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('currentDate').textContent = currentDate.toLocaleDateString('en-US', options);
+</script>
+</body>
+</html>
